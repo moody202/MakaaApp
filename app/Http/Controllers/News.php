@@ -23,7 +23,7 @@ class News extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**

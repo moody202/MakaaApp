@@ -67,7 +67,8 @@ Route::get('/test/{id?}', function (){
 // Route::resource('News', 'News');
 
 Route::get('index','AdminController@getindex');
-Route::get('admin','AdminController@ShowString');
+Route::get('/redirect/{serv}','SocilController@redirect');
+Route::get('/callback/{serv}','SocilController@callback');
 
 Auth::routes(['verify'=>true]);
 
